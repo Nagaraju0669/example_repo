@@ -1,0 +1,24 @@
+iUDjGamA8kXDA18gJ8eS0lZZ+eVzQBKwiILX+kkm
+
+AKIA3Z26VXJOCJ552V45
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Principal": {
+                "AWS": "811410504284"
+            },
+            "Condition": {}
+        }
+    ]
+}
+
+
+
+kops create cluster --cloud=aws --zones=us-east-1b --name=demo.k8s.rajuvasu.net --dns-zone=rajuvasu.net --dns private 
+
+kubectl config set-credentials cluster-admin --username=admin --password=Raju@2501
